@@ -1,59 +1,51 @@
-﻿<h1 align="center">ᴄʏʙᴇʀ-ᴀʀꜱᴇɴᴀʟ</h1>
+# ᴄʏʙᴇʀ-ᴀʀꜱᴇɴᴀʟ
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Security-Exploit_Dev-red?style=for-the-badge&logo=kali-linux" alt="Exploit Dev Badge" />
-  <img src="https://img.shields.io/badge/Toolkit-Advanced-green?style=for-the-badge&logo=target" alt="Toolkit Badge" />
-  <img src="https://img.shields.io/badge/Status-Maintained-blue?style=for-the-badge&logo=github-actions" alt="Status Badge" />
+  <img src="https://img.shields.io/badge/Security-Exploit_Dev-red?style=for-the-badge&logo=kali-linux" />
+  <img src="https://img.shields.io/badge/Toolkit-GDB-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Maintained-blue?style=for-the-badge" />
 </p>
 
 ---
 
-## 🛡 Project Overview
-**Cyber-Arsenal** is a high-performance exploit development and reverse engineering toolkit. Built upon the foundation of `pwndbg`, it enhances the standard GDB experience by providing a suite of specialized commands for memory analysis, binary exploitation, and kernel-level debugging.
+## About
 
-This repository serves as the core of my offensive security laboratory, providing the precision needed to analyze complex vulnerabilities and develop robust proofs-of-concept.
+Cyber-Arsenal is a collection of tools and custom commands for GDB, based on [pwndbg](https://github.com/pwndbg/pwndbg).
 
----
+It is designed for binary analysis, debugging, and reverse engineering. The project includes utilities for inspecting memory, analyzing program execution, and working with different binary formats.
 
-## ⚡ Key Capabilities
-- **Advanced Context:** Real-time visualization of registers, stack, and code execution.
-- **Memory Forensics:** Deep inspection of the heap (ptmalloc/jemalloc) and virtual memory mapping.
-- **Exploit Automation:** Integrated tools for ROP chain construction, cyclic pattern generation, and shellcode analysis.
-- **Architecture Support:** Comprehensive support for x86, x64, ARM, and MIPS.
+## Features
 
----
+- Register, stack, and disassembly views
+- Heap and memory inspection
+- Cyclic pattern generation
+- ROP-related analysis tools
+- Support for x86, x86_64, ARM, and MIPS
 
-## 🛠 Deployment & Setup
-To integrate this arsenal into your debugging environment:
+## Installation
 
 ```bash
-# Clone the arsenal
 git clone https://github.com/coolstx/cyber-arsenal.git
-
-# Initialize development environment
 cd cyber-arsenal
 ./setup.sh
 ```
 
----
+## Project Structure
 
-## 📂 Core Components (Internal Intelligence)
-| Module | Description |
-| :--- | :--- |
-| `pwndbg/commands/` | Implementation of advanced security commands. |
-| `pwndbg/heap/` | Specialized memory allocators and heap analysis logic. |
-| `pwndbg/ghidra/` | Integration hooks for Ghidra decompiler synchronization. |
+| Directory | Description |
+|---|---|
+| `pwndbg/commands/` | Custom GDB commands |
+| `pwndbg/heap/` | Heap inspection tools |
+| `pwndbg/ghidra/` | Ghidra integration |
 
----
+## Tools
 
-## 🌐 Mission Control
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=kali,git,python,bash,linux,cpp,docker,vscode" alt="Tools Used" />
+  <img src="https://skillicons.dev/icons?i=kali,git,python,bash,linux,cpp,docker,vscode" />
 </p>
 
 ---
 
 <p align="center">
-  <i>"In the realm of security, precision is the only currency."</i><br>
-  <sub>Managed by <a href="https://github.com/coolstx">coolstx</a>. Based on the legendary pwndbg.</sub>
+  <sub>Maintained by <a href="https://github.com/coolstx">coolstx</a></sub>
 </p>
